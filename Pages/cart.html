@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="/images/smartlogo2.jpg"></a>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="/Pages/homepage.html">HOME</a></li>
+                    <li><a href="/Pages/products.html" target="_blank">PRODUCTS</a></li>
+                    <li><a href="/Pages/cart.html">CART</a></li>
+                    <li><a href="/Pages/aboutus.html">ABOUT US</a></li>
+                    <li><a href="/Pages/contactus.html">CONTACT US</a></li>
+                    <li><a href="/Pages/products.html"><i class="fas fa-search"></i> </a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                    <a href="/Pages/login.html" class="nav-login">LOGIN</a>
+                </ul>
+            </div>
+        </nav>
+    </section>
+<section class="cart-header">
+  <h1>Cart Page</h1>
+  <input type="text" placeholder="Search products...">
+  <select>
+    <option>Sort</option>
+  </select>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="cart-container">
+
+  <!-- LEFT PRODUCTS -->
+  <div class="products-box">
+    <h2>Products</h2>
+
+    <div class="table-header">
+      <div>Product</div>
+      <div>Price</div>
+      <div>Category</div>
+      <div>Quantity</div>
+      <div></div>
+    </div>
+
+    <!-- ITEM 1 -->
+    <div class="product-row">
+      <div class="product-info">
+        <svg viewBox="0 0 100 60">
+          <circle cx="30" cy="30" r="20" fill="#ff7043"/>
+          <circle cx="60" cy="30" r="20" fill="#8bc34a"/>
+        </svg>
+        <div>
+          <strong>Apples</strong><br>
+          <span class="badge">500g</span>
+          <span class="badge">1kg</span>
+        </div>
+      </div>
+      <div>₹80</div>
+      <div>
+        <select>
+          <option>1 kg</option>
+        </select>
+      </div>
+      <div>₹80</div>
+      <div class="delete">🗑</div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="product-row">
+      <div class="product-info">
+        <svg viewBox="0 0 100 60">
+          <circle cx="40" cy="30" r="20" fill="#e53935"/>
+          <circle cx="65" cy="30" r="20" fill="#cddc39"/>
+        </svg>
+        <div>
+          <strong>Tomatoes</strong><br>
+          <span class="badge">500g</span>
+          <span class="badge">1kg</span>
+        </div>
+      </div>
+      <div>₹85</div>
+      <div>
+        <select>
+          <option>2 kg</option>
+        </select>
+      </div>
+      <div>₹85</div>
+      <div class="delete">🗑</div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="product-row">
+      <div class="product-info">
+        <svg viewBox="0 0 100 60">
+          <rect x="20" y="10" width="20" height="40" fill="#ffc107"/>
+          <rect x="50" y="10" width="20" height="40" fill="#ffb300"/>
+        </svg>
+        <div>
+          <strong>Safflower Oil</strong><br>
+          <span class="badge">500ml</span>
+          <span class="badge">1L</span>
+        </div>
+      </div>
+      <div>₹110</div>
+      <div>
+        <select>
+          <option>1 L</option>
+        </select>
+      </div>
+      <div>₹110</div>
+      <div class="delete">🗑</div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="product-row">
+      <div class="product-info">
+        <svg viewBox="0 0 100 60">
+          <circle cx="40" cy="30" r="18" fill="#d7a86e"/>
+          <circle cx="65" cy="30" r="18" fill="#c48b59"/>
+        </svg>
+        <div>
+          <strong>Almonds</strong><br>
+          <span class="badge">250g</span>
+          <span class="badge">1kg</span>
+        </div>
+      </div>
+      <div>₹270</div>
+      <div>
+        <select>
+          <option>250g</option>
+        </select>
+      </div>
+      <div>₹270</div>
+      <div class="delete">🗑</div>
+    </div>
+
+    <p style="margin-top:15px;color:#2f5d3f;">● In Stock</p>
+  </div>
+
+  <!-- RIGHT SUMMARY -->
+  <div class="summary-box">
+    <h2>Order Summary</h2>
+
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <span>₹630</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Tax (10%)</span>
+      <span>₹63</span>
+    </div>
+
+    <div class="summary-row summary-total">
+      <span>Total</span>
+      <span>₹693</span>
+    </div>
+
+    <button>Update Cart</button>
+  </div>
+
+</section>
+<section class="footer">
+        <div id="footerlogo"><a href="/Pages/homepage.html"><img src="/images/smart3.png"></a></div>
+        <div id="address">
+            <h3>Store Address</h3>
+            <p>Near Ksrm college of Engineering,Krishnapuram,Kadapa(D)</p>
+        </div>
+        <hr>
+        <div id="contact">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-envelope"></i> veeraprathap2005@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9346436889</p>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+    <section class="copyright">
+        <hr>
+        <p>© 2026 Smart Mart. All Rights Deserved </p>
+    </section>
+</body>
+</html>

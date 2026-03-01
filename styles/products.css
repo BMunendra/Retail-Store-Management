@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    background-color:#fff;
+    box-shadow: 1px 1px 2px 1px rgba(4,9,30,0.7);
+}
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 125px;
+}
+.nav-items{
+    flex: 1;
+    text-align: right;
+}
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+.nav-items ul li a{
+    color: rgb(0, 97, 0);
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-items ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-items ul li:hover::after{
+    width: 100%;
+}
+.nav-login{
+    width: 200px;
+    height: 140px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    background: rgb(28, 214, 28);
+    color: rgb(0, 97, 0);
+    font-weight: bolder;
+}
+.products-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.products-header h2 {
+  margin-right: 20px;
+}
+
+.products-header input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.products-header select {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+
+
+.filter {
+  width: 200px;
+  background: #eef3ee;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.filter h3 {
+  background: #2f5d3f;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.filter li {
+  padding: 10px;
+  cursor: pointer;
+}
+.filter li a{
+    text-decoration: none;
+}
+
+
+#fruits{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+#vegetables{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+#spices{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+#millets{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+.product-card h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.product-card button {
+  background: #2f5d3f;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
